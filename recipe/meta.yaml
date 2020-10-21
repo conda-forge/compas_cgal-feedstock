@@ -12,7 +12,7 @@ source:
 
 build:
   number: 3
-  skip: true  # [linux or py<36]
+  skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
