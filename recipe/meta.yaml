@@ -11,7 +11,7 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 5
+  number: 6
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -31,7 +31,7 @@ requirements:
     - cgal-cpp >=5.0
     - boost-cpp
     - mpir  # [win]
-    - gmp  # [not win]
+    - gmp   # [not win]
     - mpfr
 
 test:
