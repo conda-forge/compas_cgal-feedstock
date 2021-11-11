@@ -27,7 +27,7 @@ requirements:
     - cgal-cpp >=5.0
   run:
     - python
-    - eigen
+    - eigen <=3.3
     - cgal-cpp >=5.0
     - boost-cpp
     - mpir  # [win]
