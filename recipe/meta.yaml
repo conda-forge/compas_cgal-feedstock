@@ -19,7 +19,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - eigen
+    - eigen <= 3.3
   host:
     - pip
     - python
