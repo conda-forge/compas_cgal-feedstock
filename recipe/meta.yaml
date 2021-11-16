@@ -1,6 +1,6 @@
 {% set name = "compas_cgal" %}
-{% set version = "0.2.0" %}
-{% set hash = "61a16f52ab92233d7de9d9ec001e565d25b24a30a88eae67de215ac131f4faf1" %}
+{% set version = "0.3.0" %}
+{% set hash = "281b353e49afc8b14f5c81609b8f76e937c88b35fa51565598ab1dac683b675d" %}
 
 package:
   name: {{ name|lower }}
