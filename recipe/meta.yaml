@@ -44,7 +44,7 @@ about:
   home: https://github.com/compas-dev/compas_cgal
   license: LGPL-3.0-or-later
   license_file: LICENSE
-  summary: 'COMPAS friendly wrappers for CGAL algorithms.'
+  summary: COMPAS friendly wrappers for CGAL algorithms.
   dev_url: https://github.com/compas-dev/compas_cgal
   doc_url: https://github.com/compas-dev/compas_cgal
 
