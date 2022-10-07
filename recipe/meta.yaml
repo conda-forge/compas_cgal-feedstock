@@ -1,6 +1,6 @@
 {% set name = "compas_cgal" %}
-{% set version = "0.4.0" %}
-{% set hash = "06163dca834278646d014b462f1f9019ee879ad1e11a060aa48865d4aace06b3" %}
+{% set version = "0.5.0" %}
+{% set hash = "02265088be8f5138ca1b031a03d311e91b8ed114eaf453373057e094fd678d20" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
