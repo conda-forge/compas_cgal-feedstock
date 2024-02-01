@@ -28,15 +28,15 @@ requirements:
     - python
     - pybind11
     - cgal-cpp >=5.0
+    - scip >=8.1, <8.2
   run:
     - python
     - eigen <3.4
     - cgal-cpp >=5.0
     - libboost-devel
     - mpir  # [win]
-    - libscip  # [win]
     - gmp   # [not win]
-    - scip  # [not win]
+    - scip >=8.1, <8.2
     - mpfr
     - nptyping
     - typing_extensions
