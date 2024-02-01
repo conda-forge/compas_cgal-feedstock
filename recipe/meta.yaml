@@ -1,6 +1,6 @@
 {% set name = "compas_cgal" %}
-{% set version = "0.5.0" %}
-{% set hash = "02265088be8f5138ca1b031a03d311e91b8ed114eaf453373057e094fd678d20" %}
+{% set version = "0.6.0" %}
+{% set hash = "fced7cae4e08555e0c3da3b44759ec81157fd084b265052d0756d6b470d22277" %}
 
 package:
   name: {{ name|lower }}
@@ -11,8 +11,8 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 2
-  skip: true  # [py<36]
+  number: 0
+  skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -28,13 +28,15 @@ requirements:
     - python
     - pybind11
     - cgal-cpp >=5.0
+    - scip
   run:
     - python
     - eigen <3.4
     - cgal-cpp >=5.0
-    - boost-cpp
-    - mpir  # [win]
-    - gmp   # [not win]
+    - libboost-devel
+    - mpir     # [win]
+    - gmp      # [not win]
+    - scip
     - mpfr
     - nptyping
     - typing_extensions
