@@ -32,7 +32,7 @@ requirements:
     - python
     - eigen <3.4
     - cgal-cpp >=5.0
-    - boost-cpp
+    - libboost-devel
     - mpir  # [win]
     - libscip  # [win]
     - gmp   # [not win]
