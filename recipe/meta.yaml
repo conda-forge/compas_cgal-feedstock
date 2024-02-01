@@ -35,9 +35,8 @@ requirements:
     - cgal-cpp >=5.0
     - libboost-devel
     - mpir     # [win]
-    - libscip  # [win]
     - gmp      # [not win]
-    - scip     # [not win]
+    - scip
     - mpfr
     - nptyping
     - typing_extensions
