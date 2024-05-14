@@ -1,6 +1,5 @@
 {% set name = "compas_cgal" %}
-{% set version = "0.6.0" %}
-{% set hash = "fced7cae4e08555e0c3da3b44759ec81157fd084b265052d0756d6b470d22277" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +7,11 @@ package:
 
 source:
   url: https://github.com/compas-dev/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: {{ hash }}
+  sha256: 30e71af9b4b7f58de53a851d7a60c9b6ca1d2c877e4c970445f5cf14d637a558
 
 build:
   number: 0
-  skip: true  # [py<38]
+  skip: true  # [py<39]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -38,8 +37,6 @@ requirements:
     - gmp      # [not win]
     - scip
     - mpfr
-    - nptyping
-    - typing_extensions
 
 test:
   imports:
