@@ -10,7 +10,7 @@ source:
   sha256: 30e71af9b4b7f58de53a851d7a60c9b6ca1d2c877e4c970445f5cf14d637a558
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<39]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -33,7 +33,7 @@ requirements:
     - eigen <3.4
     - cgal-cpp >=5.0
     - libboost-devel
-    - mpir     # [win]
+    - gmp     # [win]
     - gmp      # [not win]
     - scip
     - mpfr
