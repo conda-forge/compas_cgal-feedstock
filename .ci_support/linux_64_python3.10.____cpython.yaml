@@ -1,11 +1,9 @@
-boost_cpp:
-- 1.78.0
 c_compiler:
 - gcc
 c_compiler_version:
 - '12'
 cdt_name:
-- cos6
+- cos7
 channel_sources:
 - conda-forge
 channel_targets:
@@ -16,9 +14,9 @@ cxx_compiler_version:
 - '12'
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
+libboost_devel:
+- '1.84'
 pin_run_as_build:
-  boost-cpp:
-    max_pin: x.x.x
   python:
     min_pin: x.x
     max_pin: x.x
