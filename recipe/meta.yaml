@@ -10,7 +10,7 @@ source:
   sha256: 30e71af9b4b7f58de53a851d7a60c9b6ca1d2c877e4c970445f5cf14d637a558
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<39]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -20,6 +20,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - pybind11                               # [build_platform != target_platform]
     - {{ compiler("c") }}
+    - {{ stdlib("c") }}
     - {{ compiler("cxx") }}
     - eigen <3.4
   host:
