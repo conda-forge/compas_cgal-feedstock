@@ -19,11 +19,13 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - pybind11                               # [build_platform != target_platform]
+    - {{ stdlib("c") }}
     - {{ compiler("c") }}
     - {{ compiler("cxx") }}
     - eigen <3.4
   host:
     - pip
+    - setuptools >=66
     - python
     - pybind11
     - cgal-cpp >=5.0
