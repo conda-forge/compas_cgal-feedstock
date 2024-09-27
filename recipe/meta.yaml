@@ -35,7 +35,7 @@ requirements:
     - eigen <3.4
     - cgal-cpp >=5.0
     - libboost-devel
-    - mpir     # [win]
+    - gmp     # [win]
     - gmp      # [not win]
     - scip
     - mpfr
