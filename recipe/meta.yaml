@@ -1,5 +1,5 @@
 {% set name = "compas_cgal" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/compas-dev/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: b39038109d514876d2cf783a4215d551622f9af576f55d85a40b621379e7658d
+  sha256: 59fc0625d58d48753774354a6658aed1d591720e2f67a37ac55924188b9efe69
 
 build:
-  number: 1
-  skip: true  # [py<39]
+  number: 0
+  skip: true  # [py<310]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -35,9 +35,10 @@ requirements:
     - eigen <3.4
     - cgal-cpp >=5.0
     - libboost-devel
-    - mpir     # [win]
-    - gmp      # [not win]
-    - scip
+    - mpir            # [win]
+    - gmp             # [not win]
+    - scip =9.0.0     # [win]
+    - scip >=9.0      # [not win]
     - mpfr
 
 test:
