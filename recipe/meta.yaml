@@ -1,5 +1,5 @@
 {% set name = "compas_cgal" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,40 +7,28 @@ package:
 
 source:
   url: https://github.com/compas-dev/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 59fc0625d58d48753774354a6658aed1d591720e2f67a37ac55924188b9efe69
+  sha256: c9b7c4146897b84be2230823186e993018e1e3e5e9c5b62cc919e450c3422f7f
 
 build:
-  number: 1
-  skip: true  # [py<310]
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - pybind11                               # [build_platform != target_platform]
     - {{ stdlib("c") }}
     - {{ compiler("c") }}
     - {{ compiler("cxx") }}
-    - eigen <3.4
   host:
     - pip
-    - setuptools >=66
     - python
-    - pybind11
-    - cgal-cpp >=5.0,<6.0
-    - scip =9.0.0     # [win]
-    - scip >=9.1      # [not win]
+    - cmake
+    - nanobind >=1.3.2
+    - scikit-build-core[pyproject] >=0.10
   run:
     - python
-    - eigen <3.4
-    - cgal-cpp >=5.0,<6.0
-    - libboost-devel
-    - mpir            # [win]
-    - gmp             # [not win]
-    - scip =9.0.0     # [win]
-    - scip >=9.1      # [not win]
-    - mpfr
+    - compas
 
 test:
   imports:
@@ -58,3 +46,4 @@ extra:
   recipe-maintainers:
     - tomvanmele
     - gonzalocasas
+    - petrasvestartas
