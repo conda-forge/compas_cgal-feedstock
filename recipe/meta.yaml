@@ -1,5 +1,5 @@
 {% set name = "compas_cgal" %}
-{% set version = "0.7.4" %}
+{% set version = "0.7.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/compas-dev/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 8ef6cb1e626556f626c682b6271eb201db69df5b64b286f91a6dcec6364e7f34
+  sha256: 34b29478610f7225590e69726b556cf4c568d34fdf916b6f5af44df06f90f78f
 
 build:
   number: 0
