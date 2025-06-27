@@ -183,7 +183,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-compas_cgal-green.svg)](https://anaconda.org/conda-forge/compas_cgal) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/compas_cgal.svg)](https://anaconda.org/conda-forge/compas_cgal) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/compas_cgal.svg)](https://anaconda.org/conda-forge/compas_cgal) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/compas_cgal.svg)](https://anaconda.org/conda-forge/compas_cgal) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-compas__cgal-green.svg)](https://anaconda.org/conda-forge/compas_cgal) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/compas_cgal.svg)](https://anaconda.org/conda-forge/compas_cgal) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/compas_cgal.svg)](https://anaconda.org/conda-forge/compas_cgal) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/compas_cgal.svg)](https://anaconda.org/conda-forge/compas_cgal) |
 
 Installing compas_cgal
 ======================
