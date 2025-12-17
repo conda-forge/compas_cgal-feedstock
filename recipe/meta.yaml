@@ -1,5 +1,5 @@
 {% set name = "compas_cgal" %}
-{% set version = "0.9.1" %}
+{% set version = "0.9.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/compas-dev/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 7f7c2219267257fc15094ecb5b515f1c14973aa8e11be115698f233dce48feb6
+  sha256: bfc558523a265b37ed478fe61e139cbe75b59e94ff70f058df3db990174d4354
 
 build:
-  number: 1
+  number: 0
   script:
     - export CMAKE_BUILD_PARALLEL_LEVEL=${CPU_COUNT}  # [win]
     - {{ PYTHON }} -m pip install . -v
